@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="blue_bg_alpha">#704f91d3</color>-->
+    <color name="fill_color">#20000000</color>
+    <color name="stroke_color">#70000000</color>
+</resources>

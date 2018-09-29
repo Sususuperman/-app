@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xc_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_mark"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/text_my_xuncha"
+            android:textColor="@color/font_1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/all_xuncha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:gravity="right|center_vertical"
+            android:text="@string/text_all"
+            android:textColor="@color/font_1"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <include layout="@layout/line_defalt_h" />
+
+    <!--使用myrecycleview避免显示不全数据-->
+    <com.hywy.publichzt.view.MyRecycleView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+</LinearLayout>

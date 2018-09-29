@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_insured_company"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_drak"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_5dp"
+    android:paddingLeft="@dimen/dimen_5dp"
+    android:paddingRight="@dimen/dimen_5dp">
+
+    <com.cs.common.view.SwipeRefreshview
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.cs.common.view.SwipeRefreshview>
+</LinearLayout>
+

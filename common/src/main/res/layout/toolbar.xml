@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/primary_default"
+    android:gravity="center_vertical"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/AppTheme.AppBarOverlay"
+    app:theme="@style/AppTheme.ActionBar">
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:theme="@style/AppTheme.ActionBar"-->
+    <!--android:theme="@style/AppTheme.ActionBar"修改menu字体颜色 但是需要把背景色去掉-->
+
+</android.support.v7.widget.Toolbar>

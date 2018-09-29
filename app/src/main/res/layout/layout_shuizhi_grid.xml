@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_5dp">
+
+        <TextView
+            android:id="@+id/tv_time_wq"
+            style="@style/listContentStyle"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_clock"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:textColor="@color/font_yellow"
+            tools:text="2018/05/26 15:21:19" />
+
+        <TextView
+            android:id="@+id/tv_temp_r"
+            style="@style/listContentStyle"
+            android:drawableLeft="@drawable/ic_temp"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:textColor="@color/font_blue"
+            android:textSize="14sp"
+            tools:text="24.2℃" />
+
+    </LinearLayout>
+
+    <com.hywy.publichzt.view.GridViewForScrollView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:clickable="false"
+        android:numColumns="2"
+        android:scrollbars="none" />
+
+</LinearLayout>

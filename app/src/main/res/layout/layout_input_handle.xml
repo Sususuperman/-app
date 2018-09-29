@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="65dp"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="是否退回："
+            android:textColor="@color/font_gray"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/toggle"
+            style="@style/MySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:checked="false"
+            android:textOff="@null"
+            android:textOn="@null" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10dp">
+
+        <TextView
+            android:id="@+id/tv_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="处理意见："
+            android:textColor="@color/font_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@null"
+            android:focusable="true"
+            android:paddingLeft="10dp"
+            android:textColor="@color/font_1"
+            android:textSize="14sp"
+            tools:text="处理意见：处理意见：处理意见：处理意见：处理意见：处理意见：处理意见：处理意见：" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@drawable/bg_btn_default"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:paddingLeft="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:text="添加附件："
+                android:textColor="@color/font_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:text="（选填、提供相关照片或视频）"
+                android:textColor="@color/bg_gray_light"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/image_grid2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4" />
+    </LinearLayout>
+</LinearLayout>

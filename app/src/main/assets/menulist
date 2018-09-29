@@ -1,0 +1,65 @@
+[
+  {
+    "ico": "app_sjgl_ico",
+    "id": "shiwuduban",
+    "sort": "1",
+    "num": "0",
+    "title": "事务督办"
+  },
+  {
+    "ico": "app_ydxc_ico",
+    "id": "yidongxuncha",
+    "sort": "2",
+    "num": "0",
+    "title": "移动巡查"
+  },
+  {
+    "ico": "app_yjfb_ico",
+    "id": "yujingfabu",
+    "sort": "3",
+    "num": "0",
+    "title": "预警发布"
+  },
+   {
+      "ico": "app_spjk_ico",
+      "id": "shipinjiankong",
+      "sort": "4",
+      "num": "0",
+      "title": "视频监控"
+    },
+  {
+    "ico": "app_tzgg_ico",
+    "id": "tongzhigonggao",
+    "sort": "5",
+    "num": "0",
+    "title": "通知公告"
+  },
+     {
+       "ico": "app_hhjc_ico",
+       "id": "hehujiance",
+       "sort": "6",
+       "num": "0",
+       "title": "河湖监测"
+     },
+    {
+      "ico": "app_zzxx_ico",
+      "id": "zuzhijigou",
+      "sort": "7",
+      "num": "0",
+      "title": "组织信息"
+    },
+    {
+        "ico": "app_sjcl_ico",
+        "id": "shijianchuli",
+        "sort": "8",
+        "num": "0",
+        "title": "事件处理"
+      },
+      {
+          "ico": "app_wtsb_ico",
+          "id": "wentishangbao",
+          "sort": "9",
+          "num": "0",
+          "title": "问题上报"
+        }
+]

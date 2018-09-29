@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HorizontalProgressBar">
+        <attr name="pb_padding" format="dimension" />
+        <attr name="pb_bg_color" format="color|reference" />
+        <attr name="pb_pb_color" format="color|reference" />
+        <attr name="pb_max" format="integer" />
+        <attr name="pb_progress" format="integer" />
+    </declare-styleable>
+</resources>

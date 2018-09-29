@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_10dp">
+
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="115dp"
+        android:layout_height="81dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_banner_img1" />
+
+    <LinearLayout
+        android:id="@+id/layout_selected"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/item_img"
+        android:layout_alignTop="@+id/item_img"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_toRightOf="@+id/item_img"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--利用占字fu实现textview文本的左右对齐 、1个汉字 = 4个&#160; = 4个&#8197; = 1个&#12288; = 2个&#8194; -->
+                <TextView
+                    style="@style/listContentStyle"
+                    android:layout_width="wrap_content"
+                    android:text="日志名称："
+                    android:textColor="@color/font_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/log_name"
+                    style="@style/listContentStyle"
+                    android:textColor="@color/font_0"
+                    android:textSize="14sp"
+                    tools:text="东方健康电风扇" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/listContentStyle"
+                    android:layout_width="wrap_content"
+                    android:text="河&#12288;&#12288;段："
+                    android:textColor="@color/font_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/river_name"
+                    style="@style/listContentStyle"
+                    android:textColor="@color/font_0"
+                    android:textSize="14sp"
+                    tools:text="东方健康电风扇" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/listContentStyle"
+                    android:layout_width="wrap_content"
+                    android:text="行&#160;&#160;政&#160;&#160;区："
+                    android:textColor="@color/font_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/address"
+                    style="@style/listContentStyle"
+                    android:textColor="@color/font_0"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/listContentStyle"
+                    android:layout_width="wrap_content"
+                    android:text="时&#12288;&#12288;间："
+                    android:textColor="@color/font_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/listContentStyle"
+                    android:textColor="@color/font_0"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:text="＞"
+            android:textColor="@color/font_3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/item_img"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@color/activity_bg_default" />
+
+</RelativeLayout>

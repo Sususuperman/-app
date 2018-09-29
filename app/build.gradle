@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.hywy.publichzt"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 5
+        versionName "v0.8.4"
+
+        multiDexEnabled true
+
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a' //, 'x86', 'x86_64', 'arm64-v8a'
+        }
+
+        //主要解决3.0 butterknife无法使用
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        //主要解决arcgis包和海康威视jar包中gson引用导致的冲突，此方法去除arcgis中gson的引用
+        configurations { all*.exclude group: 'com.google.code.gson' }
+    }
+
+    allprojects {
+        repositories {
+            google()
+            jcenter()
+
+            // Add the Esri public Bintray Maven repository
+            maven {
+                url 'https://esri.bintray.com/arcgis'
+                maven { url "https://jitpack.io" }
+            }
+        }
+    }
+
+    buildTypes {
+        //在Gradle中将shrinkResources和minifyEnabled设置为true。这样在构建的过程中，
+        // 首先ProGuard会移除没有使用的代码，接着Gradle会移除没有使用的资源。
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java']
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+//    signingConfigs {
+//        robert {
+//            storePassword 'hy20180613@'
+//            storeFile file('D:/HengYu/Luan/hengyu.keystore')
+//            keyPassword 'hy20180613@'
+//            keyAlias 'hengyu'
+//        }
+//    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:multidex:1.0.3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:24.2.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    //    testImplementation 'junit:junit:4.12'
+    //    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile 'cn.bingoogolapple:bga-badgeview:1.1.3@aar'
+    compile 'com.sothree.slidinguppanel:library:3.3.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.mobsandgeeks:android-saripaar:2.0.3'
+    //非空格式验证框架
+    implementation 'ch.ielse:switchbutton:1.0.1'
+    //仿ios风格按钮
+    implementation 'com.android.support:cardview-v7:24.2.0'
+//    compile 'com.esri.arcgisruntime:arcgis-android:100.3.0'
+    //arcgis地图
+    implementation project(':common')
+    // 添加依赖模块
+    implementation project(':amap')
+    // 添加依赖模块
+    implementation project(':photopicker')
+    // 添加依赖模块
+    implementation project(':upgrade')
+    //    //阿里云播放器
+    //    implementation(name: 'AlivcPlayer-3.4.6', ext: 'aar')
+    //    implementation(name: 'AliyunVodPlayer-3.4.6', ext: 'aar')
+    //七牛云播放器
+    implementation files('libs/pldroid-player-2.1.4.jar')
+    //上下轮播
+    compile 'com.github.paradoxie:AutoVerticalTextview:0.1'
+    //海康威视视频sdk
+    //    implementation files('libs/ivms_8700_sdk_library.jar')
+    implementation files('libs/ivms_8700_sdk_library.jar')
+}

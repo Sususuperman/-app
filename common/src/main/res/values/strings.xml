@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Comment</string>
+
+    <string name="loading">加载中...</string>
+    <string name="loadfail">加载失败！</string>
+    <string name="no_record">没有更多数据</string>
+
+
+    <!-- 讯飞语音-->
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>河南话</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>henanese</item>
+        <item>en_us</item>
+    </string-array>
+    <!-- 标点符号 -->
+    <string-array name="punc_entries">
+        <item>有标点</item>
+        <item>无标点</item>
+    </string-array>
+    <string-array name="punc_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+    <string name="text_begin">请开始说话…</string>
+    <string name="text_speak">开始说话</string>
+    <string name="text_end_speak">结束说话</string>
+    <string name="text_fail">初始化失败，错误码：</string>
+    <string name="text_volume">当前正在说话，音量大小：</string>
+    <string name="text_dictation_fail">听写失败,错误码：</string>
+    <string name="voiceset">语音设置</string>
+    <string name="mandarin">普通话</string>
+    <string name="lmz">四川话</string>
+    <string name="henanese">河南话</string>
+    <string name="cantonese">广东话</string>
+    <string name="english">英语</string>
+    <string name="title_voice">语音选择</string>
+    <!-- 讯飞语音结束-->
+
+    <string name="recording">录音</string>
+    <string name="is_recording">正在录音</string>
+    <string name="recorder_alert_title">录音</string>
+    <string name="recorder_alert_cacel_btn">取消</string>
+    <string name="recorder_alert_save_btn">确定</string>
+    <string name="recorder_alert_prompt_ready">准备录音</string>
+    <string name="recorder_alert_prompt_run">录音中...</string>
+    <string name="initfail">初始化失败</string>
+</resources>

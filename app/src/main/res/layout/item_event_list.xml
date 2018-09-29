@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_5dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_title_r"
+                style="@style/listTitleStyle"
+                android:textStyle="bold"
+                tools:text="河面污染环境" />
+
+            <TextView
+                android:id="@+id/tv_reason_r"
+                style="@style/listContentStyle"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:textSize="14sp"
+                tools:text="河面污染环境因素" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time_r"
+            style="@style/listContentStyle"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:textSize="14sp"
+            android:layout_marginRight="25dp"
+            tools:text="2018/05/31 13:39:00" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_status_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        tools:src="@drawable/ic_event_doing" />
+</FrameLayout>
+

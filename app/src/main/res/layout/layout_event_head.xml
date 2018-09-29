@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_title_r"
+                style="@style/listTitleStyle"
+                android:textStyle="bold"
+                tools:text="河面污染环境" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/listContentStyle"
+                    android:text="发布者："
+                    android:textColor="@color/font_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_publisher_r"
+                    style="@style/listContentStyle"
+                    android:textSize="14sp"
+                    android:textColor="@color/font_1"
+                    tools:text="河面污染环境因素" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time_r"
+            style="@style/listContentStyle"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:textSize="14sp"
+            android:textColor="@color/font_gray"
+            tools:text="2018/05/31 13:39:00" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_status_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        tools:src="@drawable/ic_event_doing" />
+</FrameLayout>
+

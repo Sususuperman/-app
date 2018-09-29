@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Amap</string>
+    <string name="error_location">无法获取位置信息</string>
+</resources>

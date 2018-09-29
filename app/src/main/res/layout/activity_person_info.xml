@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_drak"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="头 像"
+            android:textColor="@color/font_1"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_head_default" />
+    </LinearLayout>
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        app:item1_text="用户名"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item2_textcolor="@color/font_3"
+        app:item2_textsize="13sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon_visibility="gone"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        app:item1_text="姓 名"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item2_textcolor="@color/font_3"
+        app:item2_textsize="13sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon_visibility="gone"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/duty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        app:item1_text="职 务"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item2_textcolor="@color/font_3"
+        app:item2_textsize="13sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon_visibility="gone"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/admn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        app:item1_text="行政区"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item2_textcolor="@color/font_3"
+        app:item2_textsize="13sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon_visibility="gone"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        app:item1_text="手机号"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item2_textcolor="@color/font_3"
+        app:item2_textsize="13sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon_visibility="gone"
+        app:line1_visibility="gone"
+        app:line2_visibility="invisible"
+        app:rightIcon_visibility="visible" />
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_drak"
+    android:orientation="vertical"
+    tools:context="com.hywy.publichzt.activity.ContactDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_user_head"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_top_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_ll_back_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:id="@+id/iv_top_back"
+                android:layout_width="16dp"
+                android:layout_height="24dp"
+                android:background="@drawable/top_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.hywy.publichzt.view.image.RoundImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_head_default"
+                    app:border_width="0dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        tools:text="区县河长" />
+
+                    <TextView
+                        android:id="@+id/role"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        tools:text="区县河长" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_contact_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:src="@drawable/icon_contact_phone" />
+
+            <ImageView
+                android:id="@+id/iv_contact_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:src="@drawable/icon_contact_message"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/river"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        app:item1_text="责任河段"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item2_textcolor="@color/font_3"
+        app:item2_textsize="13sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon_visibility="gone"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/duty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        app:item1_text="职  务"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item2_textcolor="@color/font_3"
+        app:item2_textsize="13sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon_visibility="gone"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        app:item1_text="联系电话"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item2_textcolor="@color/font_3"
+        app:item2_textsize="13sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon_visibility="gone"
+        app:line1_visibility="gone"
+        app:line2_visibility="invisible"
+        app:rightIcon_visibility="visible" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/choose_btn"
+        android:gravity="center"
+        android:text="在线留言"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+</LinearLayout>

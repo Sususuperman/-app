@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_default"
+    android:padding="@dimen/dimen_10dp"
+    tools:context="com.hywy.publichzt.activity.ProblemReportDetailsActivity">
+
+    <com.hywy.publichzt.view.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pro_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_default"
+                android:gravity="center"
+                android:padding="@dimen/dimen_10dp"
+                android:textColor="@color/font_1"
+                android:textColorHint="@color/font_gray"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:background="@drawable/bg_btn_default"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/dimen_5dp">
+
+                    <LinearLayout
+                        android:id="@+id/layout_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimen_10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:gravity="center_vertical"
+                            android:text="所属区域："
+                            android:textColor="@color/font_gray"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:popupBackground="#f0000000"
+                            android:spinnerMode="dropdown"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/font_1"
+                            android:textColorHint="@color/gray_light"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <include layout="@layout/line_defalt_h" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_river"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimen_10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:gravity="center_vertical"
+                            android:text="所属河段："
+                            android:textColor="@color/font_gray"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_river"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/font_1"
+                            android:textColorHint="@color/gray_light"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <include layout="@layout/line_defalt_h" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimen_10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:gravity="center_vertical"
+                            android:text="事件类型："
+                            android:textColor="@color/font_gray"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_event"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/font_1"
+                            android:textColorHint="@color/gray_light"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="65dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:background="@drawable/bg_btn_default"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dimen_5dp"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="@dimen/dimen_5dp"
+                        android:text="问题内容："
+                        android:textColor="@color/font_gray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/pro_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minLines="3"
+                        android:paddingBottom="@dimen/dimen_5dp"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="@dimen/dimen_5dp"
+                        android:textColor="@color/font_1"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:background="@drawable/bg_btn_default"
+                    android:orientation="vertical"
+                    android:paddingBottom="50dp"
+                    android:paddingLeft="25dp">
+
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/dimen_5dp"
+                            android:paddingTop="@dimen/dimen_5dp"
+                            android:text="附件："
+                            android:textColor="@color/font_gray"
+                            android:textSize="15sp" />
+
+
+                    <GridView
+                        android:id="@+id/image_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:numColumns="4" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.hywy.publichzt.view.MyScrollview>
+
+</RelativeLayout>

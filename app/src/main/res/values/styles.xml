@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/lite_blue</item>
+        <item name="colorPrimaryDark">@color/lite_blue</item>
+        <item name="colorAccent">@color/lite_blue</item>
+        <!--<item name="colorControlNormal">@color/white</item>-->
+        <!-- For selection -->
+        <item name="selectableItemBackground">@drawable/selector_item_light</item>
+        <item name="primaryTextSelector">@drawable/primary_text_selector_light</item>
+        <item name="selectableButtonbg">@drawable/selector_button_light</item>
+    </style>
+
+    <!-- Application theme.全屏主题结束 -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+    <!--修改menu字体颜色 大小及toolbar的颜色;-->
+    <style name="AppTheme.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@color/primary_default</item>
+    </style>
+
+    <!--<style name="TabLayoutTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">-->
+    <!--<item name="android:textSize">16sp</item>-->
+    <!--<item name="android:textColor">@android:color/black</item>-->
+    <!--</style>-->
+
+    <!--ToolBar菜单样式 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/white</item> <!--  敲定颜色-->
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">18sp</item> <!--  搞掂字体大小-->
+    </style>
+
+    <!--<style name="actionTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">-->
+    <!--<item name="android:textColorPrimary">@android:color/white</item>-->
+    <!--<item name="actionBarSize">@dimen/actionbar_size</item>-->
+    <!--<item name="colorPrimary">@color/primary_default</item>-->
+    <!--</style>-->
+
+    <!--<style name="customTheme" parent="Theme.AppCompat.NoActionBar">-->
+    <!--<item name="actionBarTheme">@style/actionTheme</item>-->
+    <!--<item name="actionBarSize">@dimen/actionbar_size</item>-->
+    <!--<item name="colorPrimary">@color/primary_default</item>-->
+    <!--<item name="colorPrimaryDark">@color/primary_dark</item>-->
+    <!--<item name="colorAccent">@color/accent</item>-->
+    <!--</style>-->
+
+    <!--<style name="listAddressStyle">-->
+    <!--<item name="android:layout_width">wrap_content</item>-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:drawableLeft">@drawable/ic_location_on_deep_yellow_18dp</item>-->
+    <!--<item name="android:gravity">center_vertical</item>-->
+    <!--<item name="android:lines">1</item>-->
+    <!--<item name="android:ellipsize">end</item>-->
+    <!--<item name="android:textColor">@color/font_2</item>-->
+    <!--<item name="android:textSize">12sp</item>-->
+    <!--</style>-->
+
+    <style name="listTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/font_1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="listContentStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/font_2</item>
+        <item name="android:textColorHint">@color/font_3</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--表单标题style-->
+    <style name="formTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/font_2</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--表单EditText style-->
+    <style name="formEditStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/font_2</item>
+        <item name="android:textColorHint">@color/material_text_color_black_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--&lt;!&ndash;表单箭头style&ndash;&gt;-->
+    <!--<style name="formArrowStyle">-->
+    <!--<item name="android:layout_width">wrap_content</item>-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:layout_gravity">center_vertical</item>-->
+    <!--<item name="android:src">@drawable/ic_keyboard_arrow_right_grey_600_24dp</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash;表单箭头style&ndash;&gt;-->
+    <!--<style name="btnBgStyle">-->
+    <!--<item name="android:layout_width">150dp</item>-->
+    <!--<item name="android:layout_height">40dp</item>-->
+    <!--<item name="android:textColor">@color/black</item>-->
+    <!--<item name="android:textSize">16sp</item>-->
+    <!--<item name="android:layout_gravity">center_horizontal</item>-->
+    <!--<item name="android:gravity">center</item>-->
+    <!--<item name="android:background">@drawable/login_btn</item>-->
+    <!--</style>-->
+    <!--搜索框样式-->
+    <style name="EditTextStyle_s">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">1dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">#3e3e3e</item>
+        <!--<item name="android:textCursorDrawable">@null</item>-->
+    </style>
+    <!--详情界面文字-->
+    <style name="infoContentSytle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/font_2</item>
+        <!--<item name="android:textCursorDrawable">@null</item>-->
+    </style>
+    <!--文档名称文字-->
+    <style name="fileNameStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/material_color_blue_500</item>
+        <!--<item name="android:textCursorDrawable">@null</item>-->
+    </style>
+    <!--评分规则表格样式-->
+    <style name="TextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--<item name="android:gravity">center</item>-->
+        <item name="android:padding">3dp</item>
+        <item name="android:textColor">@color/font_1</item>
+    </style>
+    <!--toggelebutton-->
+    <style name="MySwitch" parent="@android:style/Widget.CompoundButton">
+        <item name="android:minHeight">25dp</item>
+        <item name="android:button">@drawable/switch_button</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--<style name="MapRadioButtonStyle">-->
+    <!--<item name="android:checked">false</item>-->
+    <!--<item name="android:button">@null</item>-->
+    <!--<item name="android:textColor">@color/font_2</item>-->
+    <!--<item name="android:textSize">14sp</item>-->
+    <!--<item name="android:gravity">center</item>-->
+    <!--<item name="android:background">@drawable/background_map_menu</item>-->
+    <!--</style>-->
+
+
+    <!--<style name="baseic_moreView_style">-->
+    <!--<item name="android:layout_width">match_parent</item>-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:paddingRight">10dp</item>-->
+    <!--<item name="item1_textcolor">@color/font_2</item>-->
+    <!--<item name="item1_textsize">16sp</item>-->
+    <!--<item name="item2_text">@string/unknown</item>-->
+    <!--<item name="item2_textsize">14sp</item>-->
+    <!--<item name="item2_textcolor">@color/font_1</item>-->
+    <!--<item name="item_height">45dp</item>-->
+    <!--<item name="leftIcon">@drawable/question</item>-->
+    <!--<item name="rightIcon">@drawable/right_arrow</item>-->
+    <!--<item name="leftIcon_visibility">gone</item>-->
+    <!--<item name="line1_visibility">gone</item>-->
+    <!--<item name="line2_visibility">visible</item>-->
+    <!--<item name="rightIcon_visibility">gone</item>-->
+    <!--</style>-->
+</resources>

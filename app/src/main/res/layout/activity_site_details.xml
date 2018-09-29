@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_default"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context="com.hywy.publichzt.activity.SiteDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_banner_info" />
+
+        <include layout="@layout/layout_site_info" />
+
+        <include
+            android:id="@+id/layout_rain_info"
+            layout="@layout/layout_rain_info" />
+
+        <include
+            android:id="@+id/layout_reservoir_info"
+            layout="@layout/layout_reservoir_info" />
+
+        <include
+            android:id="@+id/layout_rivercourse_info"
+            layout="@layout/layout_rivercourse_info" />
+
+        <include
+            android:id="@+id/layout_water_quality_info"
+            layout="@layout/layout_water_quality_info" />
+
+        <include layout="@layout/layout_statics_info" />
+    </LinearLayout>
+</ScrollView>

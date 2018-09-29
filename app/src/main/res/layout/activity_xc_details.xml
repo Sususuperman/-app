@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_default"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.esri.arcgisruntime.mapping.view.MapView
+            android:id="@+id/arcgis_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:enabled="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="3dp"
+                    android:background="@color/red_notice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3dp"
+                    android:text="@string/plan_roate"
+                    android:textColor="@color/font_1"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="3dp"
+                    android:background="@color/material_color_green_300" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3dp"
+                    android:text="@string/shiji_roate"
+                    android:textColor="@color/font_1"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/fragment_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activity_bg_default"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp">
+
+            <include layout="@layout/time_layout" />
+
+            <include layout="@layout/line_defalt_h" />
+
+            <include layout="@layout/layout_xc_details_log" />
+
+            <!--<include layout="@layout/log_info_layout" />-->
+
+            <!--<include layout="@layout/layout_other_log" />-->
+
+            <!--<include layout="@layout/layout_image" />-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

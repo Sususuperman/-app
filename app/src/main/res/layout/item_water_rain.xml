@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_10dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title_r"
+            style="@style/listTitleStyle"
+            android:textStyle="bold"
+            tools:text="西淠河测站" />
+
+        <TextView
+            android:id="@+id/tv_address_r"
+            style="@style/listContentStyle"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:textSize="14sp"
+            tools:text="六安市金安区" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_status_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rain_num" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rain_day_"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rain_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bg_blue"
+                android:textSize="20sp"
+                tools:text="0.40mm" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="More_menuItem">
+        <attr name="leftIcon" format="reference|color" />
+        <attr name="rightIcon" format="reference|color" />
+        <attr name="item1_text" format="reference|string" />
+        <attr name="item1_textsize" format="reference|dimension" />
+        <attr name="item1_textcolor" format="reference|color" />
+        <attr name="item_background" format="reference|color" />
+        <attr name="item2_textsize" format="reference|dimension" />
+        <attr name="item2_text" format="reference|string" />
+        <attr name="item2_textcolor" format="reference|color" />
+        <attr name="item_height" format="reference|dimension" />
+        <attr name="rightIcon_visibility" format="enum">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <attr name="leftIcon_visibility" format="enum">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <attr name="line1_visibility" format="enum">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <attr name="line2_visibility" format="enum">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+    </declare-styleable>
+
+</resources>

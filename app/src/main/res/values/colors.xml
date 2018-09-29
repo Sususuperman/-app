@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="primary_dark">#0c7cd4</color>
+    <color name="primary_default">#ff359ff2</color>
+    <color name="primary_item">#f1d24b</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#f1d24b</color>
+
+    <color name="yellow_btn_checked">#dfb51b</color>
+    <color name="yellow_btn_default">#ffd63f</color>
+
+    <color name="yellow_less">#FFFFECA4</color>
+    <color name="activity_bg_default">#FFF2F2F2</color>
+    <color name="activity_bg_drak">#ececec</color>
+
+    <color name="primary_dark_">#8f7609</color>
+
+    <color name="black">#000000</color>
+    <color name="gray_light">#CCCCCC</color>
+    <!-- 暗灰色 -->
+    <color name="alpha">#00000000</color>
+    <color name="transparent">#00000000</color>
+    <!-- 亮蓝色 -->
+
+    <!--<color name="title_bg">#5c9ce8</color>-->
+    <color name="divider_line">#d5d7dc</color>
+
+    <color name="font_1">#333333</color>
+    <color name="font_2">#666666</color>
+    <color name="font_3">#999999</color>
+
+    <color name="alpha_10">#10000000</color>
+    <color name="alpha_20">#20000000</color>
+    <color name="alpha_30">#30000000</color>
+    <color name="alpha_40">#40000000</color>
+    <color name="alpha_50">#50000000</color>
+    <color name="alpha_60">#60000000</color>
+    <color name="alpha_70">#70000000</color>
+    <color name="alpha_80">#80000000</color>
+    <color name="alpha_90">#90000000</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <!-- 控件按下时显示的颜色 -->
+    <!-- 讯飞语音结束-->
+    <!--<color name="primary_default">#3F51B5</color>-->
+    <!--<color name="primary_dark">#303F9F</color>-->
+    <!--<color name="accent">#448AFF</color>-->
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="day_disabled_text_color">#DEDEDE</color>
+    <color name="selected_day_background">#03A7E9</color>
+    <color name="primary">#EF5350</color>
+    <color name="seekbar_round">#FFA800</color>
+    <color name="seekbar_line">#349AEF</color>
+
+    <color name="red_notice">#EC5B4C</color>
+    <color name="font_blue">#4680D1</color>
+    <color name="line_bg">#D8D8D8</color>
+    <color name="font_0">#111111</color>
+    <color name="font_gray">#979797</color>
+
+    <color name="bg_blue">#4394E4</color>
+    <color name="font_yellow">#F5A623</color>
+    <color name="font_green">#72C59C</color>
+    <color name="red_exit_login">#FFFF2424</color>
+
+    <color name="font_green2">#FF68CF23</color>
+    <color name="font_red"> #FFDF6363</color>
+    <color name="bg_title_blue">#FF4293E3</color>
+    <color name="bg_gray_light">#FFD8D8D8</color>
+
+    <color name="login_bg_color"> #58A3FF</color>
+    <color name="bg_message">#FFFFE3</color>
+    <color name="bg_text_qing">#ff34c488</color>
+
+    <color name="bg_type_1"> #87CEEB</color>
+    <color name="bg_type_2"> #00BFFF</color>
+    <color name="bg_type_3"> #9ACD32</color>
+    <color name="bg_type_4">#FFD700</color>
+    <color name="bg_type_5">#FF4500</color>
+</resources>

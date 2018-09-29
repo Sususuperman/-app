@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">六安河长公众版</string>
+
+    <!-- 通用 -->
+    <string name="back">返回</string>
+    <string name="about">关于</string>
+    <string name="next">下一步</string>
+    <string name="okButton">确定</string>
+    <string name="cancelButton">取消</string>
+    <string name="errorTitle">错误</string>
+    <string name="netWorkError">网络不给力，请稍候再试！</string>
+    <string name="loginError">登录失败！</string>
+    <string name="blank_space_at">&#160;&#160;</string>
+    <string name="loading">请稍候...</string>
+    <string name="down_end_install_re">您已经下载了最新的安装包，点击安装！</string>
+    <string name="update_new_version">有新版本！</string>
+    <string name="update_old_version">已是最新版本</string>
+    <string name="down_plugin_ing">正在下载其他插件，请稍候...</string>
+    <string name="down_office_notify_title">下载提醒</string>
+    <string name="down_office_downing">下载中...</string>
+    <string name="down_office_downing_num">下载中...%s</string>
+    <string name="down_office_success">下载成功!</string>
+    <string name="down_error">下载失败，请重试！</string>
+    <string name="preparing">准备中...</string>
+    <string name="down_office_installApp_notify_title">安装提示</string>
+    <string name="user_name">请输入您的用户名</string>
+    <string name="password">请输入您的密码</string>
+    <string name="login">登录</string>
+    <string name="fast_pass">快捷通道</string>
+    <string name="register"><u>用户注册</u></string>
+    <string name="forget_password">忘记密码</string>
+    <string name="waitDialog_main_menu">首页菜单加载中...</string>
+    <string name="login_failure">登录失败！</string>
+    <string name="exit_define">确定要退出吗？</string>
+    <string name="exit_txt">退出登录后再次登录需重新输入用户名及密码</string>
+
+    <!-- 初始化信息 -->
+    <string name="error_nosdcard_fail">没有sdcard，不能使用此功能</string>
+    <string name="registUserNameCriterion">用户名至少2个字符或1个汉字,最多20个字符或10个汉字！</string>
+    <string name="password_empty">密码不能为空！</string>
+    <string name="registPwdCriterion">密码至少6个字符，最多20个字符！</string>
+    <string name="two_same">两次密码不一致</string>
+    <string name="two_confirm">确认密码不能为空</string>
+    <string name="name_empty">账号不能为空！</string>
+    <string name="login_no_authority">您无法登录该系统！</string>
+
+    <!-- 首页菜单 -->
+    <string name="ft_name">一张图</string>
+    <string name="notice_bulletin">通知公告</string>
+    <string name="main_tab_name3">投诉公示</string>
+    <string name="main_tab_name2">新闻公告</string>
+    <string name="main_tab_name1">首页</string>
+    <string name="text_my_river">我的河道</string>
+    <string name="text_my_xuncha">我的巡查</string>
+    <string name="text_all">全部</string>
+    <string name="river_yuan">淠河裕安段</string>
+    <string name="river_jinan">淠河金安段</string>
+    <string name="log_xuncha">巡查日志</string>
+    <string name="plan_roate">计划巡查路线</string>
+    <string name="shiji_roate">实际巡查路线</string>
+    <string name="start_time">起始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="xuncha_person_">巡查人：</string>
+    <string name="xingzheng_area_">行政区划：</string>
+    <string name="xuncha_plan_">巡查计划：</string>
+    <string name="xuncha_river_">巡查河段：</string>
+    <string name="xuncha_situation_">巡查情况：</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="other_problem_">其他问题：</string>
+    <string name="handle_situation_">处理情况：</string>
+    <string name="attachment_">附件：</string>
+    <string name="river_monitor">河湖信息监测</string>
+    <string name="rain_day_">日降雨量：</string>
+    <string name="stream_day_">流量：</string>
+    <string name="water_height_">水位：</string>
+    <string name="water_height_now_">当前水位：</string>
+    <string name="site_detail">站点详情</string>
+    <string name="event_detail">事件详情</string>
+    <string name="event_handle">事件处理</string>
+    <string name="yujing_detail">预警详情</string>
+    <string name="basic_info">基本信息</string>
+    <string name="see_locate">查看位置</string>
+    <string name="user_info">个人信息</string>
+    <string name="text_my_duban">我的督办</string>
+    <string name="text_my_warn">预警查看</string>
+    <string name="text_my_notify">我的上报</string>
+    <string name="text_my_save">我的收藏</string>
+    <string name="text_my_feedback">意见反馈</string>
+    <string name="text_about_us">关于我们</string>
+    <string name="text_about_system">关于系统</string>
+    <string name="text_Instructions">功能介绍</string>
+    <string name="text_exit">退出登录</string>
+
+    <string name="event_list">事务列表</string>
+    <string name="text_sumbit">提交</string>
+    <string name="text_event_handle">事件处理</string>
+
+    <string name="dialog_delete_image">确定要删除图片？</string>
+    <string name="title_notify">通知公告</string>
+    <string name="title_yujing">预警发布</string>
+    <string name="title_yujing_list">预警查看</string>
+    <string name="title_my_report">我的上报</string>
+    <string name="title_feedback">问题反馈</string>
+    <string name="copyright_info">关于系统</string>
+
+    <string name="wms_layer_url_minnesota"><![CDATA[http://182.50.122.179:8399/arcgis/rest/services/liuandjyxt/MapServer/16]]></string>
+    <string name="style_0">Style 0</string>
+    <string name="style_1">Style 1</string>
+    <string name="wms_layer_name_minnesota">fsa2017</string>
+    <string name="hint_search_organize">河长姓名，河长办名称，协作单位名称</string>
+    <string name="title_contact">通讯录</string>
+
+    <!--水质-->
+    <string name="text_diandaolv">电导率(S/m)</string>
+    <string name="text_zhuodu">浊度(NTU)</string>
+    <string name="text_rongjieyang">溶解氧(mg/L)</string>
+    <!--<string name="text_rongjieyang">溶解氧</string>-->
+    <string name="text_ph">PH值</string>
+    <string name="text_zonglin">总磷(TP)</string>
+    <string name="text_fuhuawu">氟化物(F)</string>
+    <string name="text_gaomeng">高锰酸盐指数</string>
+</resources>

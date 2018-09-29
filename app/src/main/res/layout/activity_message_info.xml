@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_drak"
+    tools:context="com.hywy.publichzt.activity.MessageInfoActivity">
+
+    <com.cs.common.view.SwipeRefreshview
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_5dp"
+        >
+
+        <com.hywy.publichzt.view.MyRecycleView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="95dp"/>
+
+    </com.cs.common.view.SwipeRefreshview>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/activity_bg_default"
+        android:minHeight="95dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_feedback_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5dp">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_gray"
+                android:textSize="13sp"
+                tools:text="发送给：成龙" />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:background="@color/white"
+                android:textColor="@color/font_1"
+                android:textSize="13sp"
+                tools:text="发送给：成龙" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sendout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:text="发送"
+            android:textColor="#707070"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</FrameLayout>

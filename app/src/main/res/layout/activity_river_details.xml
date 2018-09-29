@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_drak"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/rb_basic"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_date_left_bg"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:tag="insurance"
+                    android:text="基本信息"
+                    android:textColor="@drawable/bg_date_text"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_water"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tab1"
+                    android:background="@drawable/btn_date_middle_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:tag="company"
+                    android:text="河道水质"
+                    android:textColor="@drawable/bg_date_text"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_record"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tab1"
+                    android:background="@drawable/btn_date_right_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:tag="company"
+                    android:text="信息公开"
+                    android:textColor="@drawable/bg_date_text"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

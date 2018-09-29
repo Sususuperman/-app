@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/bg_left_view"
+        android:gravity="center"
+        android:padding="@dimen/dimen_3dp"
+        android:text="电导率：（S/m）"
+        android:lines="1"
+        android:textColor="@color/bg_blue"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:lines="1"
+        android:background="@drawable/bg_right_view"
+        android:gravity="center"
+        android:padding="@dimen/dimen_3dp"
+        android:text="293.377"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+</LinearLayout>

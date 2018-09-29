@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.cs.common.view.SoftKeyBoardSatusView
+        android:id="@+id/login_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cs.common.view.percent.PercentLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <com.cs.common.view.percent.PercentLinearLayout
+                android:id="@+id/top_bg"
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:background="@drawable/bg_login"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dip"
+                app:layout_heightPercent="65%w"
+                app:layout_widthPercent="100%w">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:scaleType="centerInside"
+                    app:layout_heightPercent="40%w"
+                    app:layout_widthPercent="60%w" />
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:text="@string/slogan"-->
+                <!--android:textColor="@color/font_1"-->
+                <!--android:textSize="18sp" />-->
+
+            </com.cs.common.view.percent.PercentLinearLayout>
+
+            <com.cs.common.view.percent.PercentLinearLayout
+                android:id="@+id/bottom_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_marginLeftPercent="13%w"
+                app:layout_marginRightPercent="13%w"
+                app:layout_marginTopPercent="5%">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_login_input"
+                    android:drawableLeft="@drawable/icon_login_user"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    android:hint="@string/user_name"
+                    android:inputType="text"
+                    android:textColorHint="@color/material_text_color_black_hint"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/bg_login_input"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/userpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/icon_login_pass"
+                        android:drawablePadding="@dimen/dimen_5dp"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/material_text_color_black_hint"
+                        android:textSize="15sp" />
+
+
+                    <ToggleButton
+                        android:id="@+id/togglePwd"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/switch_eyes"
+                        android:checked="false"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/login_btn"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </com.cs.common.view.percent.PercentLinearLayout>
+        </com.cs.common.view.percent.PercentLinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dip"
+        android:gravity="center_horizontal"
+        android:text="设置"
+        android:textColor="@color/login_bg_color"
+        android:textSize="14sp" />
+</RelativeLayout>

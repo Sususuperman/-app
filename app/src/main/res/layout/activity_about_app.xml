@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_drak"
+    android:orientation="vertical">
+
+    <com.cs.common.view.percent.PercentLinearLayout
+        android:id="@+id/top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dip"
+        app:layout_heightPercent="45%w"
+        app:layout_widthPercent="100%w">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_launcher_circle" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:textColor="@color/font_1"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:textColor="@color/font_gray"
+            android:textSize="18sp" />
+    </com.cs.common.view.percent.PercentLinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <com.hywy.publichzt.view.customer.MoreItemView
+            android:id="@+id/my_yujing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            app:item1_text="官网发布"
+            app:item1_textcolor="@color/font_1"
+            app:item1_textsize="14sp"
+            app:item2_text="六安市水利局"
+            app:item2_textcolor="@color/font_3"
+            app:item2_textsize="13sp"
+            app:item_height="?attr/actionBarSize"
+            app:leftIcon_visibility="gone"
+            app:line1_visibility="gone"
+            app:line2_visibility="visible"
+            app:rightIcon_visibility="visible" />
+
+        <com.hywy.publichzt.view.customer.MoreItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            app:item1_text="技术支持"
+            app:item1_textcolor="@color/font_1"
+            app:item1_textsize="14sp"
+            app:item2_text="中国电信集团系统集成有限公司"
+            app:item2_textcolor="@color/font_3"
+            app:item2_textsize="13sp"
+            app:item_height="?attr/actionBarSize"
+            app:leftIcon_visibility="gone"
+            app:line1_visibility="gone"
+            app:line2_visibility="visible"
+            app:rightIcon_visibility="visible" />
+
+        <com.hywy.publichzt.view.customer.MoreItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            app:item1_text="版权所有"
+            app:item1_textcolor="@color/font_1"
+            app:item1_textsize="14sp"
+            app:item2_text="北京恒宇伟业科技发展股份有限公司"
+            app:item2_textcolor="@color/font_3"
+            app:item2_textsize="13sp"
+            app:item_height="?attr/actionBarSize"
+            app:leftIcon_visibility="gone"
+            app:line1_visibility="gone"
+            app:line2_visibility="invisible"
+            app:rightIcon_visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:text="数据来源"
+            android:textColor="@color/font_3"
+            android:textSize="14sp" />
+
+        <com.hywy.publichzt.view.customer.MoreItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            app:item1_text="“河长制”信息河道水质数据"
+            app:item1_textcolor="@color/font_1"
+            app:item1_textsize="14sp"
+            app:item2_text=""
+            app:item2_textcolor="@color/font_3"
+            app:item2_textsize="13sp"
+            app:item_height="?attr/actionBarSize"
+            app:leftIcon_visibility="gone"
+            app:line1_visibility="gone"
+            app:line2_visibility="visible"
+            app:rightIcon_visibility="visible" />
+
+        <com.hywy.publichzt.view.customer.MoreItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            app:item1_text="断面水质数据"
+            app:item1_textcolor="@color/font_1"
+            app:item1_textsize="14sp"
+            app:item2_text=""
+            app:item2_textcolor="@color/font_3"
+            app:item2_textsize="13sp"
+            app:item_height="?attr/actionBarSize"
+            app:leftIcon_visibility="gone"
+            app:line1_visibility="gone"
+            app:line2_visibility="invisible"
+            app:rightIcon_visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="河长联系方式"
+                android:textColor="@color/font_1"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:gravity="center_vertical"
+                android:text="乡镇河长："
+                android:textColor="@color/font_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_hezhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="@color/font_1"
+                android:textSize="15sp"
+                tools:text="@string/see_locate" />
+
+            <ImageView
+                android:id="@+id/iv_contact_hezhang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_phone" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_defalt_h" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_10dp">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:gravity="center_vertical"
+                android:text="河长职务："
+                android:textColor="@color/font_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_toRightOf="@+id/tv3"
+                android:gravity="center_vertical"
+                android:textColor="@color/font_1"
+                android:textSize="15sp"
+                tools:text="@string/see_locate" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_defalt_h" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_10dp">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:gravity="center_vertical"
+                android:text="联系部门："
+                android:textColor="@color/font_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_toRightOf="@+id/tv4"
+                android:gravity="center_vertical"
+                android:textColor="@color/font_1"
+                android:textSize="15sp"
+                tools:text="@string/see_locate" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_defalt_h" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    android:gravity="center_vertical"
+                    android:text="联系人："
+                    android:textColor="@color/font_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/font_1"
+                    android:textSize="14sp"
+                    tools:text="@string/see_locate" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    android:gravity="center_vertical"
+                    android:text="电话："
+                    android:textColor="@color/font_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/font_1"
+                    android:textSize="14sp"
+                    tools:text="@string/see_locate" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

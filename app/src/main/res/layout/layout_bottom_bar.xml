@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/material_text_color_black_divider" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+       >
+
+        <RadioButton
+            android:id="@+id/bottom_bar1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/main_bottom_btn1"
+            android:gravity="center"
+            android:text="@string/main_tab_name1"
+            android:textSize="12sp"
+            android:textColor="@drawable/main_bottom_text" />
+
+        <RadioButton
+            android:id="@+id/bottom_bar2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_bottom_btn2"
+            android:gravity="center"
+            android:text="@string/main_tab_name2"
+            android:textSize="12sp"
+            android:textColor="@drawable/main_bottom_text" />
+
+
+        <RadioButton
+            android:id="@+id/bottom_bar3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_bottom_btn3"
+            android:gravity="center"
+            android:text="@string/main_tab_name3"
+            android:textSize="12sp"
+            android:textColor="@drawable/main_bottom_text" />
+
+
+    </RadioGroup>
+</LinearLayout>

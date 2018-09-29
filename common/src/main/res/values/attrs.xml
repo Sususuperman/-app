@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="primaryTextSelector" format="reference" />
+    <attr name="selectableButtonbg" format="reference" />
+
+    <!--百分比-->
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string" />
+        <attr name="layout_heightPercent" format="string" />
+        <attr name="layout_marginPercent" format="string" />
+        <attr name="layout_marginLeftPercent" format="string" />
+        <attr name="layout_marginTopPercent" format="string" />
+        <attr name="layout_marginRightPercent" format="string" />
+        <attr name="layout_marginBottomPercent" format="string" />
+        <attr name="layout_marginStartPercent" format="string" />
+        <attr name="layout_marginEndPercent" format="string" />
+        <attr name="layout_textSizePercent" format="string" />
+        <attr name="layout_maxWidthPercent" format="string" />
+        <attr name="layout_maxHeightPercent" format="string" />
+        <attr name="layout_minWidthPercent" format="string" />
+        <attr name="layout_minHeightPercent" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="x_editview">
+        <attr name="x_img" format="reference" /><!--右侧图片-->
+        <attr name="x_height" format="dimension" /><!--XImgEditText 高度-->
+        <attr name="x_width" format="dimension" /> <!--XImgEditText 宽度-->
+        <attr name="x_background" format="color|reference" /> <!--XImgEditText 背景-->
+        <attr name="x_hint" format="reference|string"></attr>
+
+        <attr name="x_gravity" format="enum"> <!--文字-->
+            <enum name="top" value="0"></enum>
+            <enum name="bottom" value="1"></enum>
+            <enum name="center" value="2"></enum>
+        </attr>
+        <attr name="x_img_gravity" format="enum">
+            <enum name="top" value="0"></enum>
+            <enum name="bottom" value="1"></enum>
+            <enum name="center" value="2"></enum>
+        </attr>
+
+        <attr name="x_img_visible" format="enum">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <attr name="x_inputType" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="text" value="1" />
+            <enum name="number" value="2" />
+            <enum name="phone" value="3" />
+            <enum name="textPassword" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="xti_textInputview">
+        <attr name="xti_img_visible" format="enum">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+
+        <attr name="xti_img" format="reference" /><!--右侧图片-->
+        <attr name="xti_isShow" format="boolean" /><!--右侧图片-->
+        <attr name="xti_background" format="reference" /><!--右侧图片-->
+        <attr name="xti_textColor" format="color" />
+        <attr name="xti_textColorHighlight" format="reference" />
+        <attr name="xti_textColorHint" format="color" />
+        <attr name="xti_textAppearance" format="reference" />
+        <attr name="xti_textSize" format="dimension" />
+        <attr name="xti_textStyle" format="reference" />
+
+        <attr name="xti_maxLines" format="integer" min="0" />
+        <attr name="xti_maxHeight" format="dimension" />
+        <attr name="xti_minHeight" format="dimension" />
+        <attr name="xti_lines" format="integer" min="0" />
+        <attr name="xti_height" format="dimension" />
+        <attr name="xti_width" format="dimension" />
+        <attr name="xti_text" format="string" localization="suggested" />
+        <attr name="xti_gravity" format="enum">
+            <enum name="top" value="0x30" />
+            <enum name="bottom" value="0x50" />
+            <enum name="left" value="0x03" />
+            <enum name="right" value="0x05" />
+            <enum name="center_vertical" value="0x10" />
+            <enum name="fill_vertical" value="0x70" />
+            <enum name="center_horizontal" value="0x01" />
+            <enum name="fill_horizontal" value="0x07" />
+            <enum name="center" value="0x11" />
+            <enum name="fill" value="0x77" />
+            <enum name="clip_vertical" value="0x80" />
+            <enum name="clip_horizontal" value="0x08" />
+            <enum name="start" value="0x00800003" />
+            <enum name="end" value="0x00800005" />
+        </attr>
+        <attr name="xti_img_gravity" format="enum">
+            <enum name="top" value="0x30" />
+            <enum name="bottom" value="0x50" />
+            <enum name="center_vertical" value="0x10" />
+            <enum name="center_horizontal" value="0x01" />
+            <enum name="center" value="0x11" />
+        </attr>
+        <attr name="xti_capitalize" format="enum">
+            <enum name="none" value="0" />
+            <enum name="sentences" value="1" />
+            <enum name="words" value="2" />
+            <enum name="characters" value="3" />
+        </attr>
+
+        <attr name="xti_ellipsize" format="enum">
+            <enum name="none" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+            <enum name="marquee" value="4" />
+        </attr>
+        <attr name="xti_hint" format="string" />
+        <attr name="xti_password" format="boolean" />
+        <attr name="xti_enabled" format="boolean" value="false" />
+
+        <attr name="xti_inputType" format="enum">
+            <!-- There is no content type.  The text is not editable. -->
+            <enum name="none" value="0x00000000" />
+            <enum name="text" value="0x00000001" />
+            <enum name="textCapCharacters" value="0x00001001" />
+            <enum name="textCapWords" value="0x00002001" />
+            <enum name="textCapSentences" value="0x00004001" />
+            <enum name="textAutoCorrect" value="0x00008001" />
+            <enum name="textAutoComplete" value="0x00010001" />
+            <enum name="textMultiLine" value="0x00020001" />
+            <enum name="textImeMultiLine" value="0x00040001" />
+            <enum name="textNoSuggestions" value="0x00080001" />
+            <enum name="textUri" value="0x00000011" />
+            <enum name="textEmailAddress" value="0x00000021" />
+            <enum name="textEmailSubject" value="0x00000031" />
+            <enum name="textShortMessage" value="0x00000041" />
+            <enum name="textLongMessage" value="0x00000051" />
+            <enum name="textPersonName" value="0x00000061" />
+            <enum name="textPostalAddress" value="0x00000071" />
+            <enum name="textPassword" value="0x00000081" />
+            <enum name="textVisiblePassword" value="0x00000091" />
+            <enum name="textWebEditText" value="0x000000a1" />
+            <enum name="textFilter" value="0x000000b1" />
+            <enum name="textPhonetic" value="0x000000c1" />
+            <enum name="textWebEmailAddress" value="0x000000d1" />
+            <enum name="textWebPassword" value="0x000000e1" />
+            <enum name="number" value="0x00000002" />
+            <enum name="numberSigned" value="0x00001002" />
+            <enum name="numberDecimal" value="0x00002002" />
+            <enum name="numberPassword" value="0x00000012" />
+            <enum name="phone" value="0x00000003" />
+            <enum name="datetime" value="0x00000004" />
+            <enum name="date" value="0x00000014" />
+            <enum name="time" value="0x00000024" />
+        </attr>
+        <attr name="xti_imeOptions" format="enum">
+            <enum name="normal" value="0x00000000" />
+            <enum name="actionUnspecified" value="0x00000000" />
+            <enum name="actionNone" value="0x00000001" />
+            <enum name="actionGo" value="0x00000002" />
+            <enum name="actionSearch" value="0x00000003" />
+            <enum name="actionSend" value="0x00000004" />
+            <enum name="actionNext" value="0x00000005" />
+            <enum name="actionDone" value="0x00000006" />
+            <enum name="actionPrevious" value="0x00000007" />
+            <enum name="flagNoFullscreen" value="0x2000000" />
+            <enum name="flagNavigatePrevious" value="0x4000000" />
+            <enum name="flagNavigateNext" value="0x8000000" />
+            <enum name="flagNoExtractUi" value="0x10000000" />
+            <enum name="flagNoAccessoryAction" value="0x20000000" />
+            <enum name="flagNoEnterAction" value="0x40000000" />
+            <enum name="flagForceAscii" value="0x80000000" />
+        </attr>
+    </declare-styleable>
+
+
+</resources>

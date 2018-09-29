@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    android:orientation="vertical">
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/my_xuncha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:visibility="gone"
+        app:item1_text="@string/text_my_xuncha"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon="@drawable/ic_my_xuncha"
+        app:leftIcon_visibility="visible"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/my_duban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:visibility="gone"
+        app:item1_text="@string/text_my_duban"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon="@drawable/ic_my_duban"
+        app:leftIcon_visibility="visible"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/my_yujing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:visibility="gone"
+        app:item1_text="@string/text_my_warn"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon="@drawable/ic_my_yujing"
+        app:leftIcon_visibility="visible"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/my_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:visibility="gone"
+        app:item1_text="@string/text_my_notify"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon="@drawable/ic_my_notify"
+        app:leftIcon_visibility="visible"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/my_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:visibility="gone"
+        app:item1_text="@string/text_my_save"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon="@drawable/ic_my_save"
+        app:leftIcon_visibility="visible"
+        app:line1_visibility="gone"
+        app:line2_visibility="gone"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        app:item1_text="@string/text_my_feedback"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon="@drawable/ic_feedback"
+        app:leftIcon_visibility="visible"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        app:item1_text="@string/text_about_system"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon="@drawable/ic_about_us"
+        app:leftIcon_visibility="visible"
+        app:line1_visibility="gone"
+        app:line2_visibility="visible"
+        app:rightIcon_visibility="visible" />
+
+    <com.hywy.publichzt.view.customer.MoreItemView
+        android:id="@+id/instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        app:item1_text="@string/text_Instructions"
+        app:item1_textcolor="@color/font_1"
+        app:item1_textsize="14sp"
+        app:item_height="?attr/actionBarSize"
+        app:leftIcon="@drawable/icon_instructions"
+        app:leftIcon_visibility="visible"
+        app:line1_visibility="gone"
+        app:line2_visibility="gone"
+        app:rightIcon_visibility="visible" />
+
+
+</LinearLayout>
